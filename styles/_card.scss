@@ -1,0 +1,411 @@
+/* mobile */
+
+.card-content h2 {
+    padding-bottom: 3rem;
+    padding-top: 10rem;
+    letter-spacing: 3px;
+}
+.card-content {
+    margin: auto;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5rem 0;
+}
+#nav1 {
+    position: relative;
+    z-index: 0;
+    padding-top: 10rem;
+}
+
+.deco-wrap {
+    position: absolute;
+    z-index: -1;
+    bottom: 1%;
+    right: 0;
+    width: 89px;
+    height: 144px;
+}
+.deco-wrap-2 {
+    position: absolute;
+    z-index: -1;
+    bottom: -37%;
+    right: 0;
+    width: 89px;
+    height: 144px;
+}
+#nav2 {
+    position: relative;
+    z-index: 0;
+}
+.card-content .deco-4 {
+    width: 100%;
+    height: 100%;
+}
+.section-card .card-content h2 {
+    padding-bottom: 8rem;
+}
+.section-card .card-content h3 {
+    line-height: 1.5;
+}
+#drop-desktop {
+    display: none;
+}
+.breakline-card {
+    display: none;
+}
+//text icon
+.icon-square {
+    width: 29px;
+    height: 25px;
+}
+.icon-wave {
+    width: 49px;
+    height: 18px;
+}
+.icon-hill {
+    width: 47px;
+    height: 20px;
+}
+
+/* hover tap icon  */
+.hover-me {
+    position: relative;
+    z-index: 0;
+}
+.tapYP,
+.tapY {
+    position: absolute;
+    left: -11%;
+    top: -68%;
+    width: 281px;
+    height: 86px;
+    z-index: -1;
+}
+.tapY2P,
+.tapY2 {
+    position: absolute;
+    left: -11%;
+    top: -68%;
+    width: 104px;
+    height: 86px;
+    z-index: -1;
+}
+.tapBY,
+.tapB {
+    position: absolute;
+    left: -12%;
+    top: -43%;
+    width: 115px;
+    height: 56px;
+    z-index: -1;
+}
+.tapY3,
+.tapY3P {
+    transform: rotate(-10deg);
+    width: 86px;
+}
+.tapY,
+.tapY2,
+.tapB {
+    display: block;
+}
+.tapYP,
+.tapY2P,
+.tapBY {
+    display: none;
+}
+.hover-me:hover .tapY,
+.hover-me:hover .tapY2,
+.hover-me:hover .tapB {
+    display: none;
+}
+.hover-me:hover .tapYP,
+.hover-me:hover .tapY2P,
+.hover-me:hover .tapBY {
+    display: block;
+}
+
+#hoverY {
+    color: #263c95;
+}
+#hoverR,
+#hoverB {
+    color: #fdf400;
+}
+#hoverY {
+    color: #ea048a;
+}
+#hoverY:hover {
+    color: #fdf400;
+}
+#hoverB:hover {
+    color: #ea048a;
+}
+#hoverR:hover {
+    color: #263c95;
+}
+#wrapper #notTooBig {
+    height: 110rem;
+}
+
+.section-value,
+#notTooBig {
+    padding: 5rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100vh;
+}
+.section-value .card-content {
+    z-index: 0;
+}
+.section-value .card-content h2 {
+    padding: 0;
+}
+
+// .bg-active{
+//     background-color:#F16522;
+//     opacity: 1;
+// }
+
+#notTooBig {
+    color: #263c95;
+}
+#notTooBig .img-container {
+    width: 30%;
+}
+#notTooBig .card-content {
+    z-index: 0;
+}
+#notTooBig .img-container {
+    width: 80%;
+}
+#notTooBig .card-content h2 {
+    padding: 5rem 0;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media all and (max-width: 523px) {
+    .deco-wrap-2 {
+        bottom: -18%;
+    }
+}
+@media all and (max-width: 388px) {
+    .tapY,
+    .tapYP {
+        left: -11%;
+        top: -25%;
+        width: 191px;
+        height: 74px;
+    }
+}
+@media all and (max-width: 400px) and (min-width: 390px) {
+    .tapY,
+    .tapYP {
+        top: -34%;
+        width: 223px;
+    }
+}
+@media all and (max-width: 559px) and (min-width: 500px) {
+    .tapY,
+    .tapYP {
+        left: -11%;
+        top: -25%;
+        width: 114px;
+        height: 74px;
+    }
+}
+/* Tablet */
+@media all and (max-width: 1200px) and (min-width: 700px) {
+    .section-card .card-content h3 {
+        width: 90%;
+    }
+    #wrapper #notTooBig {
+        height: 130rem;
+    }
+    #notTooBig .img-container {
+        width: 50%;
+    }
+    .icon-square {
+        width: 39px;
+        height: 49px;
+    }
+    .icon-wave {
+        width: 82px;
+        height: 32px;
+    }
+    .icon-hill {
+        width: 72px;
+        height: 32px;
+    }
+    .tapY,
+    .tapYP {
+        left: -9%;
+        top: -50%;
+        width: 363px;
+    }
+    .tapY2P,
+    .tapY2 {
+        top: -51%;
+        width: 136px;
+    }
+    .tapY3,
+    .tapY3P {
+        width: 108px;
+    }
+    .tapB,
+    .tapBY {
+        left: -12%;
+        top: -38%;
+        width: 158px;
+        height: 66px;
+    }
+    #drop-desktop {
+        display: block;
+    }
+    #howAnim {
+        top: 20%;
+    }
+    .web-br {
+        display: inline-block;
+    }
+    .deco-wrap {
+        bottom: 12%;
+        right: 0;
+        width: 132px;
+        height: 110px;
+    }
+    .deco-wrap-2 {
+        bottom: -6rem;
+        right: 5%;
+        width: 132px;
+        height: 110px;
+    }
+}
+
+@media all and (max-width: 755px) and (min-width: 701px) {
+    .tapY,
+    .tapYP {
+        left: -11%;
+        top: -25%;
+        width: 140px;
+        height: 92px;
+    }
+}
+@media all and (max-width: 778px) and (min-width: 750px) {
+    .tapY,
+    .tapYP {
+        left: -11%;
+        top: -25%;
+        width: 140px;
+        height: 92px;
+    }
+}
+@media all and (max-width: 764px) and (min-width: 756px) {
+    .tapY,
+    .tapYP {
+        left: -11%;
+        top: -25%;
+        width: 140px;
+        height: 92px;
+    }
+}
+
+
+/* Desktop */
+@media all and (min-width: 1201px) {
+    .section-card .card-content h3 {
+        width: 80%;
+    }
+    .card-content {
+        width: 90%;
+        max-width: 1920px;
+        padding: 0;
+    }
+    #wrapper #notTooBig {
+        height: 90rem;
+    }
+    #notTooBig .img-container {
+        width: 30%;
+    }
+    .icon-square {
+        width: 39px;
+        height: 49px;
+    }
+    .icon-wave {
+        width: 82px;
+        height: 32px;
+    }
+    .icon-hill {
+        width: 72px;
+        height: 32px;
+    }
+    .tapY,
+    .tapYP {
+        left: -11%;
+        top: -47%;
+        width: 520px;
+        height: 119px;
+    }
+    .tapY2P,
+    .tapY2 {
+        top: -58%;
+        height: 128px;
+        width: 186px;
+    }
+    .tapY3,
+    .tapY3P {
+        width: 147px;
+    }
+    .tapBY,
+    .tapB {
+        left: -12%;
+        top: -38%;
+        width: 217px;
+        height: 86px;
+    }
+    #howAnim {
+        top: 20%;
+    }
+    #drop-desktop {
+        display: block;
+    }
+    .web-br {
+        display: inline-block;
+    }
+    .deco-wrap {
+        bottom: -7rem;
+        right: 10%;
+        width: 211px;
+        height: 500px;
+    }
+    .deco-wrap-2 {
+        bottom: -30rem;
+        right: 5%;
+        width: 211px;
+        height: 500px;
+    }
+}
+@media all and (max-width: 1263px) and (min-width: 1201px) {
+    .tapY,
+    .tapYP {
+        left: -11%;
+        top: -16%;
+        width: 343px;
+        height: 107px;
+    }
+}
+@media all and (min-width: 1920px) {
+    .breakline-card {
+        display: block;
+    }
+}

@@ -1,0 +1,394 @@
+/* Mobile */
+#contact {
+    position: relative;
+    z-index: 0;
+}
+
+// Input animation
+.section-contact {
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+.form {
+    font-size: 26px;
+    font-family: Gotham-Medium;
+    width: 100%;
+    height: 60px;
+    position: relative;
+    z-index: 0;
+    text-align: left;
+    color: #fff;
+    overflow: hidden;
+    margin: 0;
+}
+.form input,
+.form textarea {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-color: transparent;
+    padding-top: 24px;
+    border: none;
+    outline: none;
+}
+.form label {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.form label::after {
+    content: "";
+    position: absolute;
+    left: -2px;
+    bottom: -2px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 2px solid #fff;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+//textarea input style
+
+#messageInput textarea {
+    color: #fff;
+    font-size: 26px;
+    font-family: Gotham-Medium;
+    position: relative;
+    z-index: 0;
+    height: 100px;
+    padding: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 2rem;
+}
+
+#messageInput {
+    position: relative;
+    z-index: 0;
+}
+#messageInput label {
+    font-size: 26px;
+    font-family: Gotham-Medium;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #fff;
+    transform: translateX(0%);
+    font-size: 3rem;
+}
+#messageInput textarea:focus ~ label,
+#messageInput textarea:valid ~ label {
+    opacity: 0.5;
+    color: #fff;
+    font-size: 14px;
+    transform: translateY(-150%);
+}
+
+// affect the label when input is focus, label have to put under the form
+
+.form input:focus + .label-name .content-name,
+.form input:valid + .label-name .content-name {
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #fff;
+    opacity: 0.5;
+    transition: 0.3s all;
+}
+.form input:focus + .label-name::after,
+.form input:valid + .label-name::after {
+    transform: translateX(0%);
+}
+
+//custom form group style
+.form-container {
+    display: inline-block;
+    width: 100%;
+}
+#messageInput,
+#nameInput,
+#emailInput {
+    margin-top: 5rem;
+}
+
+//reset style for form
+.myform {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 2rem;
+}
+.myform:focus {
+    color: #fff;
+    background-color: transparent !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+}
+label {
+    display: inherit;
+}
+.content-name {
+    left: 15px;
+    bottom: 42px;
+    font-size: 3rem;
+}
+#contactForm {
+    max-width: inherit;
+}
+#contactForm input {
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+#contactForm textarea {
+    height: 80px;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    border-bottom: 1px solid #ffffff70;
+}
+#contactForm input[type="submit"] {
+    border-bottom: none;
+}
+#contactForm .controls {
+    position: relative;
+    z-index: 0;
+}
+#contactForm .controls label,
+.myemail .email-label {
+    position: absolute;
+    z-index: 0;
+    top: 0px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+    pointer-events: none;
+    opacity: 1;
+}
+.form-wrap{
+    padding-top: 2.5rem;
+}
+#contactForm input:focus ~ label,
+#contactForm textarea:focus ~ label,
+#contactForm input:valid ~ label,
+#contactForm textarea:valid ~ label {
+    top: -15px;
+    left: 0;
+    font-size: 12px;
+    opacity: 0.3;
+}
+#contactForm input:focus,
+#contactForm textarea:focus,
+#contactForm input:valid,
+#contactForm textarea:valid {
+    border-bottom: 1px solid #ffffff70;
+}
+
+.myemail input:focus ~ .email-label,
+.myemail input:valid ~ .show {
+    top: -15px;
+    left: 0;
+    font-size: 12px;
+}
+#contactForm li {
+    font-size: 1.75rem;
+    margin-top: -3rem;
+}
+#contactForm .message-warn {
+    margin-top: -1rem;
+}
+
+.content-name {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    font-size: 3rem;
+}
+.btn.focus,
+.btn:focus {
+    box-shadow: transparent !important;
+    border-color: transparent;
+}
+#contact .custom-btn {
+    color: #ef6624;
+    background-color: #fff;
+    box-shadow: transparent;
+    opacity: 1!important;
+}
+#contact .custom-btn:hover {
+    color: #fff;
+    background-color: #f7aa3e;
+    border-color: transparent;
+    box-shadow: transparent;
+}
+#contact .custom-btn:focus {
+    box-shadow: transparent;
+}
+#wrapper #contact {
+    height: 100%;
+}
+#contact .company-info .row {
+    padding: 8rem 0 5rem 0;
+    margin: 0;
+}
+#contact .company-info {
+    padding-top: 7rem;
+}
+#contact .company-info::after {
+    content: "";
+    max-width: 100%;
+    width: 100%;
+    height: 95rem;
+    background-image: url(../images/footer-bkg.svg);
+    position: absolute;
+    z-index: -3;
+    bottom: 0;
+    left: 0%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#contact .company-info .small {
+    opacity: 0.6;
+    font-family: "Muli", sans-serif, Arial, Helvetica;
+    font-size: 2rem;
+}
+.logo-hor img {
+    width: 100%;
+    height: 100%;
+}
+#contact .company-info .logo-hor {
+    width: 110px;
+    height: auto;
+    margin: auto;
+}
+.company-info {
+    padding-top: 5rem;
+}
+.contact-info {
+    padding-top: 5rem;
+}
+.contact-info p {
+    font-size: 2.3rem;
+}
+.copyright {
+    padding: 5rem 0 2rem 0;
+}
+.shake #msgSubmit {
+    color: #ff0000 !important;
+    width: 100%;
+    height: 60px;
+    font-family: "Muli", sans-serif, Arial, Helvetica !important;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 19px 0;
+    background-color: #fff7f1d9 !important;
+}
+#mess .message-warn {
+    margin-top: 5rem;
+}
+
+/* Tablet */
+@media all and (max-width: 1200px) and (min-width: 700px) {
+    #contact .company-info {
+        text-align: left;
+    }
+    #contact .company-info::after {
+        bottom: 0%;
+    }
+    #contact .company-info .logo-hor {
+        width: 125px;
+    }
+    #nameInput {
+        margin-right: 5rem;
+    }
+    #contactForm .controls label, .myemail .email-label {
+        font-size: 18px;
+    }
+    #contactForm input,
+    #contactForm textarea {
+        font-size: 24px;
+    }
+}
+/* Desktop */
+@media all and (min-width: 1201px) {
+    #contact .company-info {
+        text-align: left;
+        padding: 20rem 0;
+    }
+    #contact .company-info::after {
+        height: 80rem;
+        bottom: 0;
+    }
+    #inputName #nameInput {
+        margin-right: 2rem;
+    }
+    #inputName #emailInput {
+        margin-left: 2rem;
+    }
+    #contact .company-info .logo-hor {
+        width: 170px;
+    }
+    #contact .company-info {
+        padding: 10rem 0 0 0;
+    }
+    #contactForm .controls label, .myemail .email-label {
+        font-size: 24px;
+    }
+    #contactForm input,
+    #contactForm textarea {
+        font-size: 24px;
+        font-weight: 600;
+    }
+    #mess .message-warn {
+        margin-top: 3rem;
+    }
+}
+/* Large Desktop */
+@media all and (min-width: 1501px) {
+    .copyright {
+        padding: 5rem 0 2rem 0;
+    }
+    #contact .company-info {
+        padding: 10rem 0 0 0;
+    }
+    #contact .company-info::after {
+        height: 85rem;
+        bottom: 0;
+    }
+    #contact .company-info .logo-hor {
+        width: 200px;
+    }
+}
+/* Large Desktop */
+@media all and (min-width: 1920px) {
+    #contact .company-info .logo-hor {
+        width: 200px;
+    }
+    .contact-info {
+        padding-top: 8rem;
+    }
+    
+    
+}

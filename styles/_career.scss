@@ -1,0 +1,498 @@
+.section-career {
+    color: #233e97;
+    text-align: center;
+}
+.section-career .card-content .career-logo {
+    padding-top: 0rem;
+    width: 51rem;
+    height: 54rem;
+    margin: 0 auto;
+}
+.section-career .card-content p {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.section-career .card-content .job-list {
+    font-size: 2.25rem;
+    font-family: Gotham-Medium;
+    text-align: left;
+    padding-bottom: 5rem;
+}
+/* Job Offer style */
+.job-list {
+    padding: 5rem 0rem;
+    position: relative;
+    z-index: 0;
+}
+.job-opport {
+    font-size: 2.5rem;
+    font-family: Gotham-Medium;
+}
+.job-link {
+    display: flex;
+    flex-direction: column;
+}
+.job-title {
+    padding: 3rem 0rem;
+    margin: 0;
+    border: none;
+    font-size: 2.25rem;
+    font-family: Gotham-Medium;
+    text-align: left;
+    padding-bottom: 3rem;
+    cursor: pointer;
+}
+.job-title:hover {
+    color: #ef6624;
+}
+.job-wrap {
+    align-items: center;
+    color: #233e97;
+    text-decoration: none;
+    border-bottom: 0.5px solid #212e60;
+    position: relative;
+    z-index: 0;
+}
+
+.arrow45 {
+    background-image: url(../images/arrow45.svg);
+    background-repeat: no-repeat;
+    width: 28px;
+    height: 25px;
+    margin: 0em;
+    border: none;
+    color: #233e97;
+    background-color: transparent;
+}
+.arrow45:hover {
+    background-image: url(../images/arrow45-o.svg);
+}
+.arrow45:focus {
+    outline: none;
+}
+
+/* pop up */
+
+/* popup box style */
+
+.job-header {
+    padding: 8rem 12rem;
+}
+.strike {
+    font-size: 4.375rem;
+    font-family: Gotham-Bold;
+    position: relative;
+    z-index: 0;
+    padding: 4rem 0;
+}
+.strike::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    height: 12px;
+    bottom: 34%;
+    display: block;
+    width: 100%;
+    background: #ef6624;
+}
+#Programmer .strike::after {
+    width: 297px;
+}
+#UIDesigner .strike::after {
+    width: 175px;
+}
+#WebDesigner .strike::after {
+    width: 207px;
+}
+#Marketing .strike::after {
+    width: 147px;
+}
+.strike-sub {
+    padding: 5rem 0;
+}
+.popup_body h3 {
+    font-size: 2.25rem;
+    font-family: "Gotham-Bold";
+    z-index: 0;
+    padding: 3rem 0;
+}
+.popup_body .Pop-container p,
+.popup_body .Pop-container ul li {
+    font-family: "Muli", sans-serif, Arial, Helvetica;
+    font-size: 2.5rem;
+    line-height: 1.5;
+    color: #fff;
+}
+.Pop-detail h3,
+.Pop-detail p,
+.Pop-detail ul li {
+    color: #000000;
+}
+.Pop-detail ul li {
+    list-style-type: disc;
+    margin-left: 3rem;
+    line-height: 1.8;
+}
+
+.Pop-detail {
+    background-color: #fff;
+    color: #000000;
+    padding: 0 12rem;
+}
+.apply-wrap {
+    padding: 7rem 0;
+}
+.apply-btn .btn {
+    background-color: #f16522;
+    color: #fff;
+    border-radius: 15px;
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    width: 20rem;
+    height: 7rem;
+    font-weight: 600;
+    border: transparent;
+    box-shadow: none;
+}
+// .apply-btn:focus .btn,
+// .apply-btn:hover .btn {
+//     background-color: #233e97;
+//     color: #fff;
+//     border: transparent;
+//     box-shadow: none;
+// }
+.apply-btn a:focus .btn,
+.apply-btn a:hover .btn{
+    color: #fff;
+    text-decoration: none;
+}
+.apply-wrap a:hover .btn{
+    background-color: #233e97;
+}
+.apply-wrap a{
+    outline-color: transparent;
+    outline: none;
+}
+.Pop-container {
+    padding: 0;
+    margin: 0rem;
+}
+
+.close-btn {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+}
+
+/* fancy box */
+.fancybox-button svg {
+    display: none;
+}
+.fancybox-button {
+    background-image: url(../images/close-icon.svg);
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+    background-position: 50% 50%;
+    width: 28px;
+    height: 25px;
+    margin: 0em;
+    border: none;
+    background-color: transparent;
+}
+.Pop-container {
+    position: relative;
+}
+.fancybox-slide--html .fancybox-close-small {
+    z-index: 0;
+    width: 45px;
+    height: 45px;
+    right: 8vw;
+    top: 6vh;
+    position: fixed !important;
+    z-index: 0;
+    border-radius: 50%;
+    background-color: #233e97;
+}
+
+.fancybox-can-pan .fancybox-content,
+.fancybox-can-swipe .fancybox-content {
+    cursor: inherit;
+    
+}
+.fancybox-slide--current {
+    position: relative !important;
+    z-index: 0;
+}
+/* pop up test */
+.popup {
+    align-items: center;
+}
+.popup_body {
+    display: none;
+    position: fixed;
+    z-index: 99999 !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -o-transition: 300ms;
+    -ms-transition: 300ms;
+    transition: 300ms;
+}
+.popup_body_show {
+    display: block;
+
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -o-transition: 300ms;
+    -ms-transition: 300ms;
+    transition: 300ms;
+}
+.popup_back {
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.popup_contain {
+    position: relative;
+    background: #fff;
+    min-width: 300px;
+    max-width: 80%;
+    margin: 100px auto 50px;
+    min-height: 150px;
+    height: 80vh;
+    overflow-y: scroll;
+}
+
+.section-career .send-cv p {
+    font-size: 1.85rem;
+}
+.section-career .send-cv h2 {
+    font-size: 3.5rem;
+    font-family: Gotham-Black;
+}
+.send-cv .explore-logo {
+    width: 70vw;
+    height: auto;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.custom-btn a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+.custom-btn {
+    font-size: 2.5rem;
+    width: 30rem;
+    height: 7rem;
+    border-radius: 15px;
+    margin: 7rem;
+    background-color: #263c95;
+    color: #fff;
+    font-weight: 600;
+}
+.custom-btn:hover {
+    background-color: #ef6624;
+    color: #fff;
+    border-color: transparent;
+}
+#contactBtn:hover {
+    background-color: #ffa67a;
+    color: #fff;
+}
+
+/* Tablet */
+@media all and (max-width: 388px) {
+    #Programmer .strike::after {
+        width: 184px;
+        bottom: 29px;
+    }
+    #WebDesigner .strike::after {
+        width: 133px;
+        bottom: 29px;
+    }
+}
+/* Tablet */
+@media all and (max-width: 456px) {
+    #Programmer .strike::after {
+        width: 173px;
+        bottom: 28px;
+    }
+    #WebDesigner .strike::after {
+        width: 204px;
+        bottom: 28px;
+    }
+}
+/* Tablet */
+@media all and (min-width: 700px) {
+    .fancybox-slide--html .fancybox-close-small {
+        right: 9vw;
+        top: 8vh;
+    }
+}
+/* Tablet */
+@media all and (min-width: 900px) {
+    .fancybox-slide--html .fancybox-close-small {
+        right: 5%;
+        top: 8vh;
+    }
+}
+/* Tablet */
+@media all and (max-width: 1200px) and (min-width: 700px) {
+    .section-career .card-content .career-logo {
+        width: 70rem;
+        height: 63rem;
+    }
+    .section-career .send-cv p {
+        font-size: 2.85rem;
+    }
+    .section-career .send-cv h2 {
+        font-size: 6.85rem;
+    }
+    .popup .content {
+        width: 600px;
+        height: 100vh;
+    }
+    .popup .Pop-container p,
+    .popup .Pop-container ul li {
+        line-height: 1.8;
+    }
+    .strike {
+        font-size: 6.375rem;
+    }
+    #Programmer .strike::after {
+        width: 427px;
+    }
+    #UIDesigner .strike::after {
+        width: 244px;
+    }
+    #WebDesigner .strike::after {
+        width: 300px;
+    }
+    #Marketing .strike::after {
+        width: 215px;
+    }
+    .Pop-container {
+        max-width: 798px;
+        padding: 0;
+        margin: 5rem;
+    }
+}
+
+/* Desktop */
+@media all and (min-width: 1201px) {
+    .section-career .card-content .career-logo {
+        width: 64rem;
+        height: 58rem;
+    }
+    .section-career .send-cv h2 {
+        font-size: 7.25rem;
+    }
+    .send-cv .btn {
+        font-size: 2rem;
+        width: 30rem;
+        height: 7rem;
+        margin: 6rem 0 12rem 0;
+        font-weight: 600;
+    }
+    .send-cv .explore-logo {
+        width: 569px;
+        height: 300px;
+    }
+    .popup .content {
+        width: 798px;
+        height: 100vh;
+    }
+    .popup .Pop-container p,
+    .popup .Pop-container ul li {
+        line-height: 1.8;
+    }
+    .job-header {
+        padding: 12rem;
+    }
+    .strike {
+        font-size: 6rem;
+    }
+    .strike::after {
+        height: 21px;
+    }
+    #Programmer .strike::after {
+        width: 96%;
+    }
+    #UIDesigner .strike::after {
+        width: 372px;
+    }
+    #WebDesigner .strike::after {
+        width: 435px;
+    }
+    #Marketing .strike::after {
+        width: 315px;
+    }
+    .popup .close-btn {
+        cursor: pointer;
+        position: absolute;
+        right: 40px;
+        top: 40px;
+        width: 30px;
+        height: 30px;
+    }
+    .job-opport {
+        padding-top: 15rem;
+    }
+    .Pop-container {
+        max-width: 900px;
+    }
+    .fancybox-slide--html .fancybox-close-small {
+        right: 9vw;
+        top: 8vh;
+    }
+    .fancybox-slide--html {
+        padding-top: 44px;
+    }
+}
+/* Large Desktop */
+@media all and (min-width: 1501px) {
+    .popup .content {
+        width: 1140px;
+        height: 100vh;
+    }
+    .Pop-detail {
+        padding: 0 12rem;
+    }
+    .strike::after {
+        width: 57%;
+        height: 19px;
+    }
+    .job-opport {
+        padding-top: 15rem;
+    }
+    .Pop-container {
+        max-width: 1140px;
+    }
+    .fancybox-slide--html .fancybox-close-small {
+        right: 6vw;
+        top: 8vh;
+    }
+    .strike::after {
+        height: 20px;
+    }
+    #Programmer .strike::after {
+        width: 71%;
+    }
+    #WebDesigner .strike::after {
+        width: 430px;
+    }
+}

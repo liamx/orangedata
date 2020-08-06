@@ -1,0 +1,116 @@
+
+/* mobile */
+.heading-m{
+    position: absolute;
+    z-index: 1;
+    top: 250px;
+    left: 5%;
+    display: block;
+}
+.heading-d{
+    display: none;
+}
+.intro-wrapper{
+    text-align: left;
+    padding: 0rem 0rem;
+    padding-top: 30vh;
+    z-index: 1;
+    display: none;
+}
+.mars-container{
+    display: block;
+    height: 800px;
+    position: relative;
+    z-index: 0;
+}
+.intro-video{
+    display: none;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.intro-space {
+    height: 200rem;
+    width: auto;
+    background-image: url(../images/Homepage_mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#nav1{
+    position: relative;
+    z-index: 0;
+}
+
+.spaceship-2{
+    display: block;
+    position: absolute;
+    right: 45vw;
+    top: -132px;
+    z-index: 2;
+    background-image: url(../images/spaceship2.svg);
+    height: 100%;
+    width: 7rem;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/* Tablet */
+@media all and (max-width: 1200px) and (min-width: 700px) {
+    .mars-container{
+        display: block;
+        height: 266rem;
+    }
+    .intro-video{
+        display: none;
+    }
+    .spaceship-2{
+        display: block;
+        right: 47%;
+        top: -140px;
+    }
+    .intro-space {
+        height: 272rem;
+        width: auto;
+        background-image: url(../images/Homepage_mobile.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .heading-m{
+        display: block;
+    }
+    .heading-d{
+        display: none;
+    }
+    .intro-wrapper{
+        display: none;
+    }
+    .heading-m {
+        top: 20%;
+    }
+}
+
+/* Desktop */
+@media all and (min-width: 1201px) {
+    .mars-container{
+        display: none;
+    }
+    .intro-video{
+        display: block;
+    }
+    .spaceship-2{
+        display: none;
+        right: 47%;
+        top: 0px;
+    }
+    .heading-m{
+        display: none;
+    }
+    .heading-d{
+        display: block;
+    }
+    .intro-wrapper{
+        display: block;
+    }
+}
